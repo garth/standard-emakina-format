@@ -13,7 +13,7 @@ var argv = require('minimist')(process.argv.slice(2), {
   }
 })
 
-// running `semistandard-format -` is equivalent to `semistandard-format --stdin`
+// running `standard-emakina-format -` is equivalent to `standard-emakina-format --stdin`
 if (argv._[0] === '-') {
   argv.stdin = true
   argv._.shift()
@@ -22,10 +22,10 @@ if (argv._[0] === '-') {
 if (argv.help) {
   console.log(function () {
   /*
-  semistandard-format - Auto formatter for the easier cases in standard
+  standard-emakina-format - Auto formatter for the easier cases in standard
 
   Usage:
-      semistandard-format <flags> [FILES...]
+      standard-emakina-format <flags> [FILES...]
 
       If FILES is omitted, then all JavaScript source files (*.js) in the current
       working directory are checked, recursively.
@@ -38,7 +38,7 @@ if (argv.help) {
       -w  --write     Directly modify input files.
       -h, --help      Show usage information.
 
-  Readme:  https://github.com/maxogden/semistandard-format
+  Readme:  https://github.com/garth/standard-emakina-format
 
   */
   }.toString().split(/\n/).slice(2, -2).join('\n'))

@@ -1,7 +1,7 @@
 {
   "indent" : {
     "ReturnStatement": ">=1",
-    "value": "  ",
+    "value": "    ",
     "alignComments": true,
     "ArrayExpression": 1,
     "ArrayPattern": 1,
@@ -439,7 +439,7 @@
     "htmlOptions": {
       "brace_style": "collapse",
       "indent_char": " ",
-      "indent_size": 2,
+      "indent_size": 4,
       "max_preserve_newlines": 2,
       "preserve_newlines": true
     }
